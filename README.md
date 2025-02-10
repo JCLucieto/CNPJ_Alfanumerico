@@ -5,4 +5,4 @@ Em resposta à crescente demanda por novos números de CNPJ, o formato será mod
 O novo número de identificação do CNPJ terá 14 posições. As oito primeiras identificarão a raiz do novo número, compostas por letras e números. As quatro seguintes representarão a ordem do estabelecimento, também alfanuméricas. As duas últimas posições, que correspondem aos dígitos verificadores, continuarão a ser numéricas.  
 É importante ressaltar que essa mudança não afetará os CNPJs já existentes. Os números atuais permanecerão válidos, e os dígitos verificadores também não serão alterados.  
 Disponibilizei uma classe em Python com métodos para validação de CNPJ (tanto Alfanumérico como Numérico) e um programa exemplo utilizando essa classe.  
-Em breve disponibilizarei também para Java e C#.
+Em breve disponibilizarei também para C#.
