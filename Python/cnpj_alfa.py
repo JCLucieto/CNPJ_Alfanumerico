@@ -7,6 +7,7 @@
 import re
 import random
 import string
+import constantes_tipo_cnpj as constp
 
 # Definição da Classe
 
@@ -47,14 +48,14 @@ class Cnpj_Alfa:
         try:
             # Consiste Tipo
             tipo = tipo.upper()
-            if tipo == 'A':
+            if tipo == constp.ALFANUMERICO:
                 # Define os caracteres possíveis: 0-9 e A-Z
                 caracteres_possiveis = string.digits + string.ascii_uppercase
-            elif tipo == 'N':
+            elif tipo == constp.NUMERICO:
                 # Define os caracteres possíveis: 0-9
                 caracteres_possiveis = string.digits
             else:
-                raise ValueError('Tipo de CNPJ Inválido! Digite A ou N')
+                raise ValueError('Tipo de CNPJ Inválido! Valores Validos: A ou N')
             # Gera a string com 12 caracteres aleatórios
             resultado = ''.join(random.choice(caracteres_possiveis) for _ in range(12))
             # Calcula o DV do CNPJ gerado
